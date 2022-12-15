@@ -1,0 +1,8 @@
+{% extends 'mainPages/base.html' %}
+{% block content %}
+<h1>Изменение новости</h1>
+<form action="" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-info ml-2">Обновить</button>
+</form>
+{% endblock %}

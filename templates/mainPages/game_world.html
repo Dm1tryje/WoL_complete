@@ -1,0 +1,37 @@
+{% extends 'mainPages/base.html' %}
+{% load static %}
+{% block title %}Игровые миры{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <img width="150" height="100" src="{% static 'img/logo.svg' %}" alt="logo">
+        <h1 class="display-4">Игровые миры</h1>
+        <ul style="
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+">
+            <li>
+                <h2>Lorderon</h2>
+                <img width="700" height="500" src="{% static 'img/Lorderon.jpg' %}" alt="Lorderon">
+                <p>
+                    Самый старый игровой мир проекта. Он пережил множество разных ивентов и взрастил множество хороших игроков. Подходит для опытных игроков
+                </p>
+            </li>
+            <li>
+                <h2>Tirisfal</h2>
+                <img width="700" height="500" src="{% static 'img/Tirisfal.jpg' %}" alt="Tirisfal">
+                <p>
+                    Самый молодой, недавно открывшийся мир. У него еще все впереди. В данном мире Вас ждут неизведанные ранее локации и подземелья. Подходит для новичков
+                </p>
+            </li>
+            <li>
+                <h2>Pandaria</h2>
+                <img width="700" height="500" src="{% static 'img/Pandaria.jpg' %}" alt="Pandaria">
+                <p>
+                    Данный игровой мир совмещает в себе баланс между PVP и PVE контентом. Заходи и сражайся за величие своей фракции, ведь битв будет очень много
+                </p>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

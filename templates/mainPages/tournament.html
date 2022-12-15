@@ -1,0 +1,16 @@
+{% extends 'mainPages/base.html' %}
+{% load static %}
+{% block title %}Турниры{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <img width="150" height="100" src="{% static 'img/logo.svg' %}" alt="logo">
+        <h1 class="display-4">Турниры</h1>
+        <h2 class="display-4">ПРИЗОВОЙ ФОНД - 5 000 000₽</h2>
+        <p>
+          Каждые несколько месяцев мы открываем турнир, посвященный новому сезону арены, по завершению которого<br>
+          производим выдачу денежных и внутриигровых призов. Сразитесь в брекетах 2х2, SoloQ или даже на полях боя,<br>
+          чем выше ваше место в рейтинговой таблице, тем больше приз!
+        </p>
+    </div>
+{% endblock %}

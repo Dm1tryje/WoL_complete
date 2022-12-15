@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+    {% extends 'mainPages/base.html' %}
+    {% block title %}Вход{% endblock %}
+
+    {% block content %}
+        <h2>Вход в аккаунт</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success ml-2" type="submit">Войти</button>
+        </form>
+    {% endblock %}
+</body>
+</html>

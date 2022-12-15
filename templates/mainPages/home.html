@@ -1,0 +1,29 @@
+{% extends 'mainPages/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <img width="150" height="100" src="{% static 'img/logo.svg' %}" alt="logo">
+        <h1 class="display-4">World of Lorderon</h1>
+        <p class="lead">Лучший проект mmo rpg в России по версии The Game Awards в 2022 году!</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">Все новости проекта здесь</a>
+            <a class="btn btn-primary btn-lg" href="{% url 'tournament' %}" role="button">Турниры</a>
+            <a class="btn btn-primary btn-lg" href="{% url 'fraction' %}" role="button">Игровые фракции</a>
+            <a class="btn btn-primary btn-lg" href="{% url 'race' %}" role="button">Игровые расы</a>
+            <a class="btn btn-primary btn-lg" href="{% url 'game_world' %}" role="button">Игровые миры</a>
+        </p>
+        <div style="text-center">
+            <a href="{% url 'allience_detail' %}">
+                <img class="rounded" width="170" height="220" src="{% static 'img/allience.jpg' %}" alt="allienceLogo">
+            </a>
+            <a class="rounded" style="padding-left: 200px" href="{% url 'horde_detail' %}">
+                <img width="170" height="220" src="{% static 'img/horde.jpg' %}" alt="hordeLogo">
+            </a>
+            <a class="rounded" style="padding-left: 200px" href="{% url 'renegades_detail' %}">
+                <img width="220" height="206" src="{% static 'img/renegades.jpg' %}" alt="renegades">
+            </a>
+        </div>
+    </div>
+{% endblock %}

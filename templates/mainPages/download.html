@@ -1,0 +1,31 @@
+{% extends 'mainPages/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+      <h1>СПАСИБО ЗА РЕГИСТРАЦИЮ!</h1>
+      <ul style="
+            list-style: none;
+            display: flex;
+            flex-direction: column;">
+        <li style="padding-top: 40px">
+          <h2>У вас уже есть наш лаунчер?</h2>
+          <a class="btn btn-primary btn-lg" role="button" href="https://sirus.su/launcher/latest-win">Скачать автоматический загрузчик</a>
+          <p>
+            Установите этот автоматический загрузчик и укажите папку с игрой. Он установит все последние обновления и подготовит клиент к игре на сервере.
+          </p>
+          <p>
+            Загрузчик для: <a href="https://sirus.su/launcher/latest-linux">Linux</a> | <a href="https://sirus.su/launcher/latest-mac">MacOS</a>
+          </p>
+        </li>
+        <li style="padding-top: 40px">
+          <h2>У вас нет нашего лаунчера?</h2>
+          <a class="btn btn-primary btn-lg" role="button" href="https://sirus.su/sirus.-torrent">Скачать лаунчер World of Lorderon</a>
+          <p>
+            Вы можете скачать полную версию нашего клиента включающего в себя все актуальные обновления и экслюзивные дополнения через торрент.
+          </p>
+        </li>
+      </ul>
+    </div>
+{% endblock %}
